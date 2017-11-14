@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" initial-scale="1.0,user-scalable=no,maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telephone=no">
+    <title>登录</title>
+    <meta name="description" scontent="login">
+    <meta name="keywords" content="login">
+    <link href="css/login.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 标题：富途商品汇 -->
+    <div class="login-title"></div>
+    <!-- main包裹层 -->
+    <div class="login-wrap">
+        <!-- 输入框和提交按钮 -->
+        <form id="loginForm" action=" " method="post">
+            <div class="login-input">
+                <span class="login-icon login-phone"></span>
+                <input id="loginUserName" type="text" name="User Name" placeholder="请输入手机号码">
+            </div>
+            <div class="login-input">
+                <span class="login-icon login-key"></span>
+                <input id="loginPassword" type="password" name="Password" placeholder="请输入密码">
+            </div>
+            <label class="login-btn" for="loginBtnInput">
+                <input id="loginBtnInput" type="button" value="" onClick='validateForm()'>
+            </label>
+        </form>
+        <!-- 忘记密码链接 -->
+        <a href="#">忘记密码 ?</a>
+        <!-- 注册链接 -->
+        <div class="register">
+            <a href="#">没有账号？点击注册</a>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

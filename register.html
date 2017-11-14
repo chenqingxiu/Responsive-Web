@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" initial-scale="1.0,user-scalable=no,maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telephone=no">
+    <title>注册</title>
+    <meta name="description" content="register">
+    <meta name="keywords" content="register">
+    <link href="css/register.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 标题：富途商品汇 -->
+    <div class="register-title"></div>
+    <!-- main包裹层 -->
+    <div class="register-wrap">
+        <!-- 输入框和注册按钮 -->
+        <form id="RegisterForm" action=" " method="post">
+            <div class="register-input">
+                <span class="register-icon register-phone"></span>
+                <input id="registerUserName" type="text" name="User Name" placeholder="请输入手机号码">
+            </div>
+            <div class="register-input">
+                <span class="register-icon register-verify"></span>
+                <input id="registerNum" type="password" name="Password" placeholder="请输入验证码">
+                <input class="register-getnum" type="button" value="">
+            </div>
+            <div class="register-input">
+                <span class="register-icon register-key"></span>
+                <input id="registerPassword" id="registerPassword" type="password" name="Password" placeholder="请输入密码">
+            </div>
+            <div class="register-input">
+                <span class="register-icon register-referrer"></span>
+                <input id="registerId" type="password" name="Password" placeholder="请输入推荐人ID（必填）">
+            </div>
+            <label class="register-btn" for="register-btn-input">
+                <input id="register-btn-input" type="button" value="" onClick='validateForm()'>
+            </label>
+        </form>
+        <!-- 已有账号登录链接 -->
+        <div class="register-hadaccount">
+            <a href="#">已有账号？点击登录</a>
+        </div>
+    </div>
+    <script src="js/register.js"></script>
+</body>
+
+</html>

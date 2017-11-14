@@ -1,0 +1,203 @@
+/*reset css, from YUI Library*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td
+{
+    margin: 0;
+    padding: 0;
+}
+table
+{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+fieldset,
+img
+{
+    border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var
+{
+    font-weight: normal;
+    font-style: normal;
+}
+ol,
+ul
+{
+    list-style: none;
+}
+caption,
+th
+{
+    text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-size: 100%;
+    font-weight: normal;
+}
+q:before,
+q:after
+{
+    content: ”;
+}
+abbr,
+acronym
+{
+    border: 0;
+}
+
+html
+{
+    font-size: 40px;
+}
+
+body
+{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: .6rem;
+
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: #fff;
+}
+
+/*main包裹层*/
+.withdrawal-record-wrap
+{
+    width: 100%;
+    margin: 0rem auto;
+}
+
+/*提现记录行*/
+.withdrawal-record-row
+{
+    width: 90%;
+    height: 5.5rem;
+    margin: 0 auto;
+
+    text-align: left;
+
+    border-bottom: solid 1px #a6a6a6;
+}
+
+/*去除最后一个记录行的底边框*/
+.withdrawal-record-row:last-child
+{
+    border-bottom: none;
+}
+
+.withdrawal-money-row
+{
+    font-family: 'MicrosoftJhengHei','Microsoft YaHei','微软雅黑','STSong';
+    font-size: .7rem;
+    font-weight: 600;
+
+    width: 100%;
+    padding: .5rem 0 .3rem;
+
+    color: #1a1a1a;
+}
+
+.withdrawal-row
+{
+    font-family: 'MicrosoftJhengHei','Microsoft YaHei','微软雅黑','STSong';
+    font-size: .6rem;
+
+    width: 100%;
+    padding-top: .3rem;
+
+    color: #a6a6a6;
+}
+
+
+/*媒体查询，匹配分辨率*/
+@media only screen and (max-width: 373px)
+{
+    html
+    {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 374px) and (max-width: 450px)
+{
+    html
+    {
+        font-size: 24px;
+    }
+}
+@media only screen and (min-width: 451px) and (max-width: 525px)
+{
+    html
+    {
+        font-size: 28px;
+    }
+}
+@media only screen and (min-width: 526px) and (max-width: 600px)
+{
+    html
+    {
+        font-size: 32px;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 675px)
+{
+    html
+    {
+        font-size: 36px;
+    }
+}
+
+/*查询屏幕宽高比调整页面*/
+@media only screen and (min-aspect-ratio: 10/16) and (max-width: 1000px)
+{
+.withdrawal-record-row
+{
+    height: 4rem;
+}
+.withdrawal-money-row
+{
+    padding: .1rem 0 0rem;
+}
+.withdrawal-row
+{
+    padding-top: .1rem;
+}
+}
